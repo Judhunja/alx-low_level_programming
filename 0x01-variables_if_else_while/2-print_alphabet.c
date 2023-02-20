@@ -3,14 +3,17 @@
 
 /**
 * main - prints alphabet in lowercase followed by a new line
-* Return - prints Success
+* Return: Always 0
 */
 
 int main(void)
 {
-	int x = %lf
-	x = abcdefghijklmnopqrstuvwxyz;
-	putchar(x);
-}
-	return 0;
+	char x;
+
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		putchar(x);
+	}
+	putchar('\n');
+	return (0);
 }
