@@ -3,9 +3,10 @@
 
 int main(void)
 {
-	printf("Size of int : %d", sizeof(int));
-	printf("Size of float : %f", sizeof(float));
-	printf("Size of char : %c", sizeof(char));
-	printf("Size of double : %lf", sizeof(double));
+	printf("Size of int : %ld", sizeof(int));
+	printf("Size of float : %ld", sizeof(float));
+	printf("Size of char : %ld", sizeof(char));
+	printf("Size of long int : %ld", sizeof(long int));
+	printf("Size of long long int : %ld", sizeof(long long int));
 	return (0);
 }
