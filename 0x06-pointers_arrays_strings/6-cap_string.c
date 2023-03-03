@@ -15,9 +15,9 @@ char *cap_string(char *j)
 
 	for (i = 0; i != '\0'; i++)
 	{
-		if (j[i] >= 'A' && j[i] <= 'Z')
+		if (j[i] >= 'a' && j[i] <= 'z')
 		{
-			j[i] = j[i] + 32;
+			j[i] = j[i] - 32;
 		}
 	}
 	return (j);
