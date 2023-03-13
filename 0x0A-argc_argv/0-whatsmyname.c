@@ -4,20 +4,21 @@
 
 
 /**
-  * program prints its name, followed by a new line
+  * main - prints out its name followed by anew line
   *
+  * @argc: length of string
+  * @argv: pointer to string
   *
-  * Return: always zero (success)
-  *
+  * Return: always 0 (success)
   */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
 	for (i = 0; argc < i; i++)
 	{
-		printf ("%s\n",argv[i]);
+		printf("%s\n", argv[i]);
 		return (0);
 	}
 }
