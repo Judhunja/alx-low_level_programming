@@ -16,9 +16,10 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	for(i = 0; i < argc; i++)
+	for (i = 0; i < argc;)
 	{
-		printf("%d\n", atoi(argv[i]));
+		i++;
 	}
+	printf("%d\n", atoi(argv[i]));
 	return (0);
 }
