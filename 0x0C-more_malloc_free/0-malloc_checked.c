@@ -6,24 +6,19 @@
  *		termination with a status value of 98
  * _malloc: allocates memory using malloc
  * @b: pointer to address where memory is to be allocated
- * @c: another pointer
+ *
  *
  * Return: b
  *
  */
 
-int *_malloc()
-{
-	int *ptr = malloc(sizeof(int));
-
-	return (ptr);
-}
-
 void *malloc_checked(unsigned int b)
 {
-	if (_malloc == NULL)
+	void *ptr = malloc(b);
+
+	if (ptr == NULL)
 	{
 		exit(98);
 	}
-	return (0);
+	return (ptr);
 }
