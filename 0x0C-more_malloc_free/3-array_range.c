@@ -33,7 +33,7 @@ int *array_range(int min, int max)
 	}
 	for (i = 0; i < size; i++)
 	{
-		min = min + 1;
+		ptr[i] = min++;
 	}
 	return (ptr);
 }
