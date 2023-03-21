@@ -6,6 +6,6 @@
 	printf("%d", x + -(2x)); \
 	else \
 	printf("%d", x); \
-} while (0)
+} while (1)
 
 #endif
