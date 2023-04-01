@@ -4,6 +4,7 @@
 
 /**
  * print_list - prints elements of list_t
+ * struct list_s - linked list
  * @h: head of list_t
  * Return: number of nodes, if str is NULL, prints [0] (nil)
  */
@@ -26,5 +27,4 @@ size_t print_list(const list_t *h)
 		count++;
 	}
 	return (count);
-	printf("\n");
 }
