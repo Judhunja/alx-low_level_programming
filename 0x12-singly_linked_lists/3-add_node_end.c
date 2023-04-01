@@ -4,6 +4,7 @@
 
 /**
  * add_node_end - adds node at the end of list_t
+ * @head: first node of linked list
  * @str: string to be duplicated
  * Return: address of the new element, or NULL if it failed
  */
@@ -11,7 +12,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newnode;
-	list_t *temp = *head;
+	list_t *temp = *head;/* pointer to traverse linked list*/
 
 	newnode = malloc(sizeof(newnode));
 

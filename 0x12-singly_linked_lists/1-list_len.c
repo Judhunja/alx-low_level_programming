@@ -2,7 +2,7 @@
 
 /**
  * list_len - returns number of elements in list_t
- * @h: head of list_t
+ * @h: first node of list_t
  * Return: number of elements in list_t
  */
 
