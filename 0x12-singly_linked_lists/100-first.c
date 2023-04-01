@@ -1,11 +1,10 @@
 #include <stdio.h>
+#include "lists.h"
 
 /**
  * before_main - prints a string before the main function is executed
  * Return: void
  */
-
-void before_main(void) __attribute__ ((constructor));
 
 void before_main(void)
 {
