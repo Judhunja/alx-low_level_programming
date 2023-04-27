@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * before_main_function - prints a string before the main 
+ * before_main_function - prints a string before the main
  * function is executed
  * Return: nothing
  */
