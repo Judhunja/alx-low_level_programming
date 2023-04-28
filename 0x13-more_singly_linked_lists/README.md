@@ -3,7 +3,7 @@
 
 #	Tasks
 
-##0. Print list
+## 0. Print list
 
 **Write a function that prints all the elements of a listint_t list.**
 
@@ -13,20 +13,20 @@
    	 You are allowed to use printf
 
 
-##1. List length
+## 1. List length
 
 **Write a function that returns the number of elements in a linked listint_t list.**
 
   	  Prototype: size_t listint_len(const listint_t *h);
 
-##2. Add node
+## 2. Add node
 
 **Write a function that adds a new node at the beginning of a listint_t list.**
 
    	 Prototype: listint_t *add_nodeint(listint_t **head, const int n);
    	 Return: the address of the new element, or NULL if it failed
 
-##3. Add node at the end
+## 3. Add node at the end
 
 **Write a function that adds a new node at the end of a listint_t list.**
 
@@ -34,14 +34,14 @@
    	Return: the address of the new element, or NULL if it failed
 
 
-##4. Free list
+## 4. Free list
 
 **Write a function that frees a listint_t list.**
 
     Prototype: void free_listint(listint_t *head);
 
 
-##5. Free
+## 5. Free
 
 **Write a function that frees a listint_t list.**
 
@@ -49,7 +49,7 @@
     The function sets the head to NULL
 
 
-##6. Pop
+## 6. Pop
 
 **Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).**
 
@@ -57,7 +57,7 @@
     if the linked list is empty return 0
 
 
-##7. Get node at index
+## 7. Get node at index
 
 **Write a function that returns the nth node of a listint_t linked list.**
 
@@ -66,7 +66,7 @@
     if the node does not exist, return NULL
 
 
-##8. Sum list
+## 8. Sum list
 
 **Write a function that returns the sum of all the data (n) of a listint_t linked list.**
 
@@ -74,9 +74,9 @@
     if the list is empty, return 0
 
 
-##9. Insert
+## 9. Insert
 
-Write a function that inserts a new node at a given position.
+**Write a function that inserts a new node at a given position.**
 
     Prototype: listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
     where idx is the index of the list where the new node should be added. Index starts at 0
@@ -85,7 +85,7 @@ Write a function that inserts a new node at a given position.
 
 
 
-##10. Delete at index
+## 10. Delete at index
 
 **Write a function that deletes the node at index index of a listint_t linked list.**
 
@@ -95,7 +95,7 @@ Write a function that inserts a new node at a given position.
 
 
 
-##11. Reverse list
+## 11. Reverse list
 
 **Write a function that reverses a listint_t linked list.**
 
@@ -107,7 +107,7 @@ Write a function that inserts a new node at a given position.
 
 
 
-##12. Print (safe version)
+## 12. Print (safe version)
 
 **Write a function that prints a listint_t linked list.**
 
@@ -120,7 +120,7 @@ Write a function that inserts a new node at a given position.
 
 
 
-##13. Free (safe version)
+## 13. Free (safe version)
 
 **Write a function that frees a listint_t list.**
 
@@ -132,7 +132,7 @@ Write a function that inserts a new node at a given position.
 
 
 
-##14. Find the loop
+## 14. Find the loop
 
 **Write a function that finds the loop in a linked list.**
 
