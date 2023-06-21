@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * main - calculates result of operations based on specified operators
@@ -15,12 +16,19 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (1);
+		exit(98);
 	}
 
 	operator = argv[2];
 	operand1 = atoi(argv[1]);
 	operand2 = atoi(argv[3]);
+
+	if ((strcmp(operator, "/") == 0 || strcmp(operator,
+					"%") == 0) && operand2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
 	operation = get_op_func(operator);
 
@@ -33,7 +41,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
-		return (0);
+		return (99);
 	}
 
 	return (0);
