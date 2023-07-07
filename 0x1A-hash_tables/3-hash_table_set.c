@@ -33,17 +33,25 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (current == NULL)
 	{
+		new_elem->next = NULL;
 		ht->array[index] = new_elem;
 	}
 	else
 	{
-		if (strcmp(current->key, key) == 0)
-		{
-			new_elem->next = ht->array[index]->next;
-			free(ht->array[index]->key);
-			free(ht->array[index]->value);
-			free(ht->array[index]);
-			ht->array[index] = new_elem;
+		while (current != NULL)
+		{	
+			if (strcmp(current->key, key) == 0)
+			{
+				free(new_elem->key);
+				free(new_elem->value);
+				free(new_elem);
+				strcpy(ht->array[index]->value, value);
+			}
+			else
+			{
+				new_elem->next = ht->array[index]->next;
+				ht->array[index] = new_elem;
+			}
 		}
 	}
 	return (1);
