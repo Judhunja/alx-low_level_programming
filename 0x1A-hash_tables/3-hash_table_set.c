@@ -30,20 +30,22 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = new_elem;
-		return (1);
 	}
-	current = ht->array[index];
-	while (current != NULL)
+	else
 	{
-		if (strcmp(current->key, key) == 0)
+		current = ht->array[index];
+		while (current != NULL)
 		{
-			free(current->value);
-			current->value = strdup(value);
-			if (current->value == NULL)
-				return (0);
-			return (1);
+			if (strcmp(current->key, key) == 0)
+			{
+				free(current->value);
+				current->value = strdup(value);
+				if (current->value == NULL)
+					return (0);
+				return (1);
+			}
+			current = current->next;
 		}
-		current = current->next;
 	}
 	new_elem->next = ht->array[index];
 	ht->array[index] = new_elem;
