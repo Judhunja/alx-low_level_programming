@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
-	if (ht->array[index] != NULL)
+	if (ht->array[index]->value != NULL)
 	{
 		new_elem->next = ht->array[index];
 		ht->array[index] = new_elem;
