@@ -39,10 +39,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(current->key, key) == 0)
 		{
-			strcpy(ht->array[index]->value, value);
-		}
-		else
-		{
 			new_elem->next = ht->array[index]->next;
 			free(ht->array[index]->key);
 			free(ht->array[index]->value);
